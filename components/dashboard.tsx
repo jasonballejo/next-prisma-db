@@ -12,6 +12,9 @@ export default function Dashboard({ ...post }) {
       <h2>
         Created: <span className="text-yellow-500">{post.createdAt}</span>
       </h2>
+      <h2>
+        Content: <span className="text-yellow-500">{post.content}</span>
+      </h2>
     </>
   );
 }
