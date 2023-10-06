@@ -1,7 +1,8 @@
-"use client";
+// "use client";
 
-import Dashboard from "@/components/dashboard";
-import { useState } from "react";
+// import Dashboard from "@/components/Dashboard";
+// import { useState } from "react";
+import TestAPI from "@/components/TestAPI";
 
 interface FormData {
   title: string;
@@ -10,15 +11,15 @@ interface FormData {
 }
 
 export default async function Home() {
-  const [form, setForm] = useState<FormData>({
-    title: "",
-    content: "",
-    id: "",
-  });
+  // const [form, setForm] = useState<FormData>({
+  //   title: "",
+  //   content: "",
+  //   id: "",
+  // });
   return (
     <div>
-      <h1 className="text-center font-bold text-2xl mt-4">Notes</h1>
-      <form
+      <TestAPI />
+      {/* <form
         onSubmit={(e) => {
           e.preventDefault();
         }}
@@ -41,7 +42,7 @@ export default async function Home() {
         <button type="submit" className="bg-blue-500 text-white rounded p-1">
           Add +
         </button>
-      </form>
+      </form> */}
     </div>
   );
 }
